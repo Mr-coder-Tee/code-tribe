@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Benne&family=Caveat:wght@500&family=Dosis&family=Jomhuria&family=Noto+Sans+SC:wght@900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background: rgba(0,0,0,0.1);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.btn{
+    background: tomato;
+    color: white;
+    padding: 10px 20px;
+}
+
+.about-us-section .about-us-col-1 .about-us h2 span,
+.menu-section .menu-col-1 h2 span,
+.expert .row-1 h2 span,
+.testimonials-section .intro-testimonials h2 span{
+    color: red;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.about-us-section .about-us-col-1 .about-us h2,
+.menu-section .menu-col-1 h2,
+.expert .row-1 h2,
+.testimonials-section .intro-testimonials h2{
+    font-family: 'Benne', serif;
+    font-size: 35px;
+}
+.about-us-section .about-us-col-1 .about-us h2 p,
+.menu-section .menu-col-1 h2 p,
+.expert .row-1 h2 p,
+.testimonials-section .intro-testimonials h2 p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*----nav-section----*/
+.nav-section{
+    width: 100%;
+    background: rgb(254,254,254);
+    padding: 0 10px;
+    position: fixed;
+    z-index: 999;
+}
+.nav-section .nav-bar{
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    justify-content: space-between;
+    position: relative;
+    text-align: center;
+    top: 0;
+}
+.home-section .nav-section-body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: url('img/bg.jpg');
+    justify-content:center;
+    margin-top: 10px;
+}
+.nav-section .nav-bar .logo{
+    margin: 10px 10%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav-section .nav-bar .logo a{
+    color: black;
+    font-family: 'Jomhuria', cursive;
+    font-size: 80px;
+}
+.nav-section .nav-bar .logo a span{
+    color: red;
+}
+.nav-section .nav-bar .nav-menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    right: 5%;
+    padding: 0 5px;
+}.home-section{
+    width: 100%;
+    height: 100vh;
+}
+.nav-section .nav-bar .nav-menu ul li{
+   display: inline-block;
+   margin-left: 10px;
+}
+.nav-section .nav-bar .nav-menu ul li a{
+    color: black;
+    font-weight: 800;
+    font-family: 'Benne', serif;
+}
+.home-section .nav-section-body h1{
+    color: white;
+    font-size: 5em;
+    font-weight: 900;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+.home-section .nav-section-body p{
+    color: white;
+    margin: 10px 0;
+}
+.home-section .nav-section-body .btn-div{
+    margin: 25px 0;
+}
+.home-section .nav-section-body .btn-div a{
+    position: relative;
+}
+.home-section .nav-section-body .btn-div a span{
+    width: 0%;
+    background: rgba(255,255,255,0.2);
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+.home-section .nav-section-body .btn-div a:hover span{
+    width: 100%;
+    transition: 500ms ease-in;
+    z-index: -1;
+}
+.home-section .nav-section-body .btn-div a:hover{
+    border: 2px solid tomato;
+    background: transparent;
+    color: tomato;
+    z-index: 2;
+}
+
+.nav-section .nav-bar .nav-menu ul li a:hover{
+    transition: 250ms ease-in-out;
+    border: 1px solid rgb(228, 128, 79);
+    background: red;
+    color: white;
+    padding: 3px 8px;
+    transform: translateY(-10px);
+}
+
+/*-----about us-------*/
+.about-us-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 100px 10px;
+    margin: 35px 0;
+    position: relative;
+}
+
+
+
+.about-us-section .about-us-col-1,
+.about-us-section .about-us-col-2{
+    width: 35%;
+    padding: 20px 30px;
+}
+
+.about-us-section .about-us-col-2 .about-us-img{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: rgb(78, 83, 73);
+}
+.about-us-section .about-us-col-2 .about-us-img img{
+    width: 100%;
+}
+.about-us-section .about-us-col-2 .about-us-img .hover-div{
+    
+    width: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(255, 8,4,.3);
+}
+.about-us-section .about-us-col-2 .about-us-img .hover-div p{
+    color: white;
+    font-size: 45px;
+    font-family: 'Caveat', cursive;
+    transform: scale(0);
+}
+.about-us-section .about-us-col-2 .about-us-img:hover .hover-div{
+    width: 100%;
+    transition: 850ms ease-in;
+}
+.about-us-section .about-us-col-2 .about-us-img:hover .hover-div p{
+    transition: 900ms ease-in;
+    transform: scale(1);
+}
+
+/*------menu section-------*/
+
+.menu-section{
+    width: 100%;
+    padding: 90px 50px 30px 50px;
+    text-align: center;
+}
+.menu-section .menu-col-1{
+    margin: 10px;
+}
+.menu-section .menu-col-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 3;
+    padding: 10px 40px;
+    
+}
+.menu-section .menu-col-2 .card{
+    width:490px ;
+    padding: 20px 10px;
+    margin: 20px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 16px 0px rgba(0,0,0,.5);
+}
+
+.menu-section .menu-col-2 .card .card-img{
+    width: 100%;
+}
+.menu-section .menu-col-2 .card .card-img img{
+    width: 100%;
+}
+.menu-section .menu-col-2 .card .food-name{
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+}
+.menu-section .menu-col-2 .card:hover{
+    transition: 250ms ease-in;
+    transform: translateY(-15px);
+    box-shadow: 0px 5px 18px 0px rgba(0,0,0,.8);
+}
+
+/*----expert------*/
+
+.expert{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 2px solid red;
+    padding: 80px;
+}
+.expert .row-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.expert .row-2{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+    padding: 10px;
+}
+.expert .row-2 .col{
+    padding: 10px;
+    width: 25%;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 3;
+}
+.expert .row-2 .col .expert-img img{
+    width: 100%;
+}
+.expert .row-2 .col .expert-name p{
+    font-family: 'Benne', serif;
+    font-size: 20px;
+}
+
+/*-------testimonials-section--------*/
+
+
+.testimonials-section{
+    width: 100%;
+    height: 100vh;
+    background: url('img/bg2.jpg');
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border:  2px solid blue;
+}
+
+.testimonials-section .intro-testimonials{
+    color: white;
+}
+.testimonials-section .testimonials .test-card{
+    border: 5px solid red;
+    width: 30%;
+    height: 100%;
+    background: white;
+}

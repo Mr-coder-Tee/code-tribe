@@ -44,6 +44,7 @@ body{
     top: 0;
     bottom: 0;
     left: 10px;
+    box-shadow: 2px 4px 10px rgb(0, 0, 0,.6);
     z-index: 99;
 }
 .profilephoto{
@@ -54,41 +55,53 @@ body{
     align-items: center;
 }
 .profilephoto img{
-    width: 50%;
-    height: 90%;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px; 
     object-fit: cover;
     border: 4px solid white;
+    border-radius: 50%;
 }
 .details{
     width: 100%;
     height: 80%;
-    border: 2px solid red;
     padding: 10px 0 0 20px;
 }
 .details .detail-col h3,p,h4{
     color: black;
+    
 }
-.heading::after{
-   content: '-';
+.details .detail-col .heading{
+    margin-bottom: 10px;
+}
+.details .detail-col p {
+    display:flex;
+    flex-wrap: wrap;
+}
+.details .detail-col p span i{
+    font-size: .7em;
+    margin-right: 5px;
+}
+.details .detail-col .heading::after{
+   content: '';
    width: 100%;
-   height: 2px;
+   height: 3px;
    background: black;
    position: relative;
    bottom: 0;
+   display: block;
 }
 .body-section{
     width: 100%;
     height: 80%;
     position: relative;
     top: 20%;
-    border: 2px solid teal;
 }
 .body-container{
-    width: 69%;
+    width: 68%;
     height: 100%;
     position: absolute;
     right: 0;
+    padding: 1em 0 0 2em;
 }
 
 

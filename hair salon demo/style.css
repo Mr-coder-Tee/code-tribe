@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+:root{
+    --yellowtail:'Yellowtail', cursive;
+    --lobstar:'Lobster', cursive;
+    --viaoda_libre:'Viaoda Libre', cursive;
+    --gold:rgb(255,219,88)
+}
+ul{
+    list-style: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.banner{
+    background: linear-gradient(to bottom,rgba(0,0,0,0.5),rgba(66, 245, 164,.8)),url('Barber_Shop_img/banner.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    padding: 2em 2em;
+}
+.banner .logo{
+    width: 10%;
+    position: absolute;
+    top: 4%;
+    left: 10%;
+}
+.banner-text{
+    text-align: center;
+    color: #fff;
+    padding-top: 180px;
+}
+.banner-text h1{
+    font-size: 70px;
+    font-weight: 900;
+    font-family: var(--yellowtail);
+}
+.banner-text p{
+    font-family: var(--viaoda_libre);
+    font-weight: 700;
+    font-size: 20px;
+    font-style: italic;
+}
+.banner-btn{
+    margin: 70px auto 0;
+}
+.banner-btn .btn{
+    width: 250px;
+    padding: 15px 20px;
+    border: 1px solid white;
+    margin: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+.banner-btn .btn span{
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: -1;
+}
+
+.banner-btn .btn:hover span{
+    transition: 250ms ease-in;
+    width: 100%;   
+}
+.banner-btn .btn:hover{
+    transition: color 250ms;
+    color: rgb(66, 245, 164);
+    font-weight: 500;
+}
+
+
+
+.sideNAve{
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #009688;
+    z-index: 2;
+}
+
+.sideNAve nav ul li{
+    margin: 50px 20px;
+}
+.menuBtn{
+    height: 50px;
+    width: 50px;
+    background: #009688;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+.menuBtn img{
+    width: 20px;
+    margin-top: 15px;
+}

@@ -1,0 +1,132 @@
+
+/*G*/
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+.nav img{
+    cursor: pointer;
+}
+/*G box-sizing: border-box;
+    padding: 0% 8%;*/
+
+
+
+.head-nav{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right,rgba(31, 29, 29, 0.486),#bac2ba86  ),url("/Desert Webpage Img/background.png") ;
+    background-size: cover;  
+    background-position: center;
+    
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav .logo img{
+    width: 80px;
+    padding: 0 15px;
+
+}
+.nav .nav-list{
+    flex: 1;
+    text-align: right;
+}
+
+.nav .nav-list ul li{
+    display: inline-block;
+    padding-right: 29px;
+}
+.nav .nav-list ul a{
+    color: white;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-right: auto;
+    transition: 1s ease-in 0;
+}
+.nav .nav-list ul a:hover{
+    border: 1px solid #54585486;
+    padding: 2px 5px;
+    color: #54585486;
+}
+.nav .menu img{
+    margin-right: 10px;
+    width: 40px;
+}
+.nav .menu img:hover{
+    transform: scale(1.2,1.2);
+}
+/*main*/
+
+
+
+main{
+    display: flex;
+    width: 100%;
+    height: 88%;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-col-1{
+    width: 60%;
+    margin-right: 10px;
+    padding: 0 10px;
+}
+.main-col-1 h1{
+    font-size: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.main-col-1 p{
+    color: white;
+    font-size: 20px;
+    line-height: 15px;
+}
+.main-col-1 a{
+    background: white;
+    padding: 10px 50px;
+    border-radius: 25px;
+    margin-top: 15px;
+    color: black;
+    font-family: sans-serif;
+    transition: 1s;
+}
+.main-col-1 a:hover{
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+.main-col-2{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px;
+    
+}
+.main-col-2 .places{
+    display: inline-block;
+    box-sizing: border-box;
+}
+.main-col-2 .places img{
+    width: 230px;
+    border-radius: 10px;
+    margin-right: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+.main-col-2 .places img:hover{
+    transform: translateY(-12px);
+    z-index: 2;
+}
+.main-col-2 .places .description h3,p{
+    color: white;
+    padding: 2px 8px;
+}
+.main-col-2 .places .description{
+    position: relative;
+    top: 0;
+}

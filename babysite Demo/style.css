@@ -1,0 +1,187 @@
+body{
+    padding:15px 0px;
+}
+.header{
+    width: 100%;
+    padding: 25px 25px;
+    background: linear-gradient(to right,red,rgb(112, 14, 14));
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-link img{
+    width: 100px;
+    background: black;
+    color: black;
+}
+.main-nav-item{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    
+}
+.main-nav-item ul li{
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    padding-left: 10px;
+    transition: 1s ease-in;
+}
+.main-nav-item ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+.main-nav-item ul :hover{
+    color: black;
+}
+
+.menu-item{
+    padding: 0px 10px;
+    text-align: center;
+}
+.menu-item a{
+    text-decoration: none;
+    color: black;
+}
+.nav-main-contact h2{
+    font-family: '', cursive;
+    font-size: 30px;
+    text-align: center;
+    background: rgba(184, 13, 218, 0.3);
+    padding: 10px 20px;
+    margin: 10px 10px;
+}
+.image-card{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    padding: 10px 10px;
+}
+.nav-flavours-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flavours{
+    text-align: center;
+    font-family: 'Lobster', cursive;
+}
+.flavours :hover{
+    color: white;
+    border: 1px solid none;
+    transform: scale(1.2,1.2);
+}
+.nav-content{
+    padding: 10px 20px;
+}
+.icons{
+    opacity: 0;
+}
+.menu-link{
+    text-align: center;
+    align-items: center;
+}
+/*
+font-family: 'Lobster', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Playball', cursive;
+*/
+
+@media(max-width:900px){
+    .image-card{
+        width: 180px;
+        height: 180px;
+        object-fit: cover;
+        padding: 10px 10px;
+    }
+    .flavours{
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        font-size: 15px;
+    }
+
+}
+@media(max-width:700px){
+    .image-card{
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+        padding: 10px 10px;
+    }
+    .nav-main-contact h2{
+        font-family: '', cursive;
+        font-size: 20px;
+        text-align: center;
+        background: rgba(184, 13, 218, 0.3);
+        padding: 10px 20px;
+        margin: 10px 10px;
+    }
+    .flavours{
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        font-size: 12px;
+    }
+}
+@media(max-width:550px){
+    .image-card{
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        padding: 10px 10px;
+    }
+    .nav-main-contact h2{
+        font-family: '', cursive;
+        font-size: 10px;
+        text-align: center;
+        background: rgba(184, 13, 218, 0.3);
+        padding: 10px 20px;
+        margin: 10px 10px;
+    }
+    .flavours{
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        font-size: 12px;
+    }
+}
+@media(max-width:400px){
+    .image-card{
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+        padding: 10px 10px;
+    }
+    .nav-main-contact h2{
+        font-family: '', cursive;
+        font-size: 10px;
+        text-align: center;
+        background: rgba(184, 13, 218, 0.3);
+        padding: 10px 20px;
+        margin: 10px 10px;
+    }
+    .flavours{
+        text-align: center;
+        font-family: 'Lobster', cursive;
+        font-size: 12px;
+    }
+    .main-nav-item{
+        display: flex;
+        margin-right: 0px;
+        border: 2px solid white;
+    }
+    .main-nav-item ul{
+        display: flex;
+        margin-right: 0px;
+        border: 2px solid white;
+        bottom: 0%;
+    }
+    .icons{
+        opacity: 1;
+    }
+}
+

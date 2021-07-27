@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import MyTask from './taskComponents/reactTask';
-
+import 'bootstrap/dist/css/bootstrap.css'
+import Counter from './Components/counter';
 ReactDOM.render(
   <React.StrictMode>
-    <MyTask />
+    <Counter />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -46,10 +46,15 @@ class MyTask extends Component {
                 {
                     this.state.users.map((rowdata,i)=>
                     <div>
-                        {rowdata.name}{'  '}
-                        {rowdata.surname}{'  '}
-                        {rowdata.age}{',  '}
-                        {this.checkAge(rowdata.age)}
+                        <ul>
+                            {this.state.users.map(user=>
+                            <li key={user.id}>
+                                {user.name}{" \t"}
+                                {user.surname}{" \t"}
+                                {user.age}{", "}{this.checkAge(user.age)}
+                            </li>
+                            )}
+                        </ul>
                     </div>
 
                     )
@@ -57,7 +62,9 @@ class MyTask extends Component {
             </div>
         );
     }
-
+    checkAge=(age)=>{
+        return age>=18?'you are old enough to code ':'you are not old enough to code';
+    }
     checkAge(age){
         return age>=18?'you are old enough to code ':'you are not old enough to code';
     }
@@ -71,3 +78,9 @@ export default MyTask;
 // you are not old enough to code
 
 //name|surname and age-if statement result here
+
+
+// {rowdata.name}{'  '}
+// {rowdata.surname}{'  '}
+// {rowdata.age}{',  '}
+// {this.checkAge(rowdata.age)}

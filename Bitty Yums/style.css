@@ -1,6 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
+:root{
+    --Orange:#ff6500;
+    --strawberryRed:#c83f49;
+    --appleGreen:#8db600;
+    --Playfair: 'Playfair Display', serif;
+}
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: var(--Playfair);
+}
+.navigation{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 0px;
+    position: relative;
+    
+}
+.nav-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-section__logo img{
+    width: 130px;
+    transition: 500ms ease-in;
+}
+.nav-section__nav-list ul{
+    display: flex;
+}
+.nav-section__nav-list ul li{
+    margin-right: 20px;
+    font-size: 1.3em;
+    display: flex;
+    
+}
+.nav-section__nav-list ul li a {
+    color: black;
+    position: relative;
+    transition: 500ms ease-in;
+    font-family: var(--Playfair);
+}
+
+.nav-section__nav-list ul li a::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width:0%;
+    height: 2px;
+    background: var(--Orange);
+    transition: 500ms ease-in;
+}
+.nav-section__nav-list ul li a:hover::after{
+    width: 100%;
+}
+.nav-section__nav-list ul li a:hover{
+    color:var(--Orange);
+}
+.nav-section__logo img:hover{
+    transform: scale(1.1);
+}
+.nav-section__body{
+    width: 100%;
+    height: 100vh;
+    background:  linear-gradient(rgba(255, 255, 255, .7),rgba(0, 0, 0, .7)),url('https://th.bing.com/th/id/R.6195e29f882efe70023135cbd3ce3cdb?rik=iMuxetO6EODyIg&riu=http%3a%2f%2fproducemadesimple.ca%2fwp-content%2fuploads%2f2017%2f03%2fbaby-food-produce-made-simple-11.jpg&ehk=FwVxeZbA68okLxQmk7HPmRhlwOH%2btgMMqV42SMEmYy0%3d&risl=&pid=ImgRaw');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-section__body h1{
+    font-size: 3em;
+    color: white;
+    font-family: var(--Playfair);
+    font-weight: 900;
+}
+.nav-section__body h3{
+    color: white;
+    font-weight: 1;
+}
+
+/*About-us*/
+
+.about-us{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.about-us__heading,
+.purees__heading{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+.about-us__heading h2,
+.purees__heading h2{
+    color: rgb(100, 98, 98);
+    font-weight: 1;
+    position: relative;
+}
+.about-us__heading h2::after,
+.purees__heading h2::after{
+    content: '';
+    width: 50%;
+    height: 2px;
+    background: var(--Orange);
+    position: absolute;
+    bottom: 0;
+    display: block;
+    transform: translateX(50%);
+}
+.about-us__paragraph{
+    padding: 0 30px;
+}
+
+.purees{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 20px; 
+}
+.puree-container{
+   background: white;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+.puree-item-card{
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, .4);
+    transition: 1s ease-in;
+    margin: 10px;
+}
+.puree-item-card:hover,
+.puree-item-card:focus{
+    transform: translateY(-5px);
+    background: rgba(100, 95, 95, 0.1);
 }

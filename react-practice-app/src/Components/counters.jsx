@@ -18,7 +18,7 @@ class Counters extends Component {
                         counter={counter}
                         onDelete={onDelete}
                         onIncrement={onIncrement}>
-                    </Counter>
+                    </Counter> 
                 )}
             </div>
         );

@@ -40,7 +40,7 @@ a{
     font-size: 1.3em;
     font-weight: 900;
 }
-li:hover{
+.btn:hover{
     box-shadow: 1px 1px 3px 1px rgba(0, 0, 0,.5);
 }
 h1{
@@ -69,6 +69,15 @@ h3::after{
     justify-content: center;
     width: 100%;
     background: skyblue;
+}
+.btn{
+    width: 100%;
+    padding: 1em 2em;
+    /* outline: none !important; */
+    font-size: 1.5em;
+    border: none !important;
+    margin-top: 10px;
+    margin-bottom: 2px;
 }
 .padding{
     padding: 10px 15px;

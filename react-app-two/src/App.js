@@ -7,20 +7,29 @@ import Users from './components/Users';
 import HomePage from './components/HomePage';
 
 class App extends Component {
-  state = {  }
+  state = { 
+      home:<HomePage/>,
+      about:<About/>,
+      profile:<Profile/>,
+      user:<Users/>,
+      currentframe:<Users/>
+   };
+   
+   bringToFront=(MyFrame)=>{
+      this.currentframe=MyFrame;
+   };
+
   render() { 
     return ( 
       <div className="container">
             <div className="nav">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Profile</a></li>
-                    <li><a href="">Users</a></li>
-                </ul>
+                <button className="btn" >home</button>
+                <button className="btn" onClick={this.bringToFront(this.about)}>About</button>
+                <button className="btn">Profile</button>
+                <button className="btn">User</button>
             </div>
             <div className="menu">
-                <Profile/>
+                {this.state.currentframe}
             </div>
         </div> 
      );

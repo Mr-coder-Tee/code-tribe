@@ -29,12 +29,12 @@
     width: 70%;
     height: 100%;
 }
-li{
+li,.list{
     padding: 1.5em 2em;
     transition: 250ms ease-in;
 
 }
-a{
+a,.archer{
     padding: 1em 1.5em;
     color: black;
     font-size: 1.3em;
@@ -54,7 +54,13 @@ h3{
     margin: 20px;
    position: relative;
 }
-
+.flex{
+    display: flex;
+    align-items: center;
+}
+.m-2{
+    margin: 2px;
+}
 h3::after{
     content: '';
     width: 100%;
@@ -63,6 +69,26 @@ h3::after{
     position: absolute;
     bottom: 0;
     left: 0;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.center-straight{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    transform: translateY(50%);
+}
+.flex{
+    transition: 250ms ease-in;
+    margin: 5px;
+}
+.flex:hover{
+    background: skyblue;
+    transform: scale(1.01);
 }
 .header-div{
     display: flex;
@@ -83,6 +109,31 @@ h3::after{
 .padding{
     padding: 10px 15px;
 }
+.card-background{
+    height: 100vh;
+    background: darkslategray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-background img{
+    width: 20px;
+    height: 20px;
+}
+.card{
+    
+    background: white;
+    width: 60%;
+    height: 30%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 250ms ease-in;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px 3px rgba(0, 0, 0, 0.541);
+}
+
 @media (max-width:870px) {
     p{
         font-size: .8em;

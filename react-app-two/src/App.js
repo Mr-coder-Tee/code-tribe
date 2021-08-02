@@ -6,17 +6,18 @@ import Profile from './components/Profile';
 import Users from './components/Users';
 import HomePage from './components/HomePage';
 
+
 class App extends Component {
   state = { 
       home:<HomePage/>,
       about:<About/>,
       profile:<Profile/>,
       user:<Users/>,
-      currentframe:<Users/>
+      currentframe:<Profile/>
    };
    
    bringToFront=(MyFrame)=>{
-       
+         
    };
 
   render() { 

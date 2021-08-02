@@ -78,6 +78,7 @@ h3::after{
     border: none !important;
     margin-top: 10px;
     margin-bottom: 2px;
+    background: rgba(233, 230, 230, 0.473);
 }
 .padding{
     padding: 10px 15px;

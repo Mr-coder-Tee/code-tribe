@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import HomePage from './components/HomePage'
+import MainLayOut from './components/mainLayOut';
 
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MainLayOut />
   </React.StrictMode>,
   document.getElementById('root')
 );

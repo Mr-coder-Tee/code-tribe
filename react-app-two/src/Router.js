@@ -9,15 +9,13 @@ import Users from './components/Users';
 import Profile from './components/Profile';
 import About from './components/About';
 
-export default{
-    <Router history={browserHistory}>
-        <Route component={MainLayOut}>
-            <Route path="/" component={HomePage}/>
-            <Route path="/" component={Users}/>
-            <Route path="/" component={Profile}/>
-            <Route path="/" component={About}/>
-        </Route>
-    </Router>
-};
+function Router(){
+    <div className="router">
+        <HomePage path="/home" componet/>
+        <About/>
+        <Profile/>
+        <Users/>
+    </div>
+}
 
-
+export default Router

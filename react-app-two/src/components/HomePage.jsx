@@ -4,7 +4,13 @@ import React, { Component } from 'react';
 class HomePage extends Component {
     state = {  }
     render() { 
-        return ( <div>Home</div> );
+        return ( 
+            <div className="home-container">
+                <div className="glass">
+                    
+                </div>
+            </div> 
+            );
     }
 }
  

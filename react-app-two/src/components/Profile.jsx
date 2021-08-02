@@ -8,7 +8,7 @@ class Profile extends Component {
 
                 <div className="card">
                     <div className="center">
-                        <h5 className="m-2">Tebatso Manaka</h5>
+                        <h1 className="m-2">Tebatso Manaka</h1>
                     </div>
                     <div className="center-straight">
                         <div className="flex">

@@ -122,12 +122,14 @@ h3::after{
 }
 .card{
     
-    background: white;
+    background: url('./images/cardbackground.jpg');
+    background-size: cover;
     width: 60%;
-    height: 30%;
+    height: 40%;
     border-radius: 10px;
     overflow: hidden;
     transition: 250ms ease-in;
+    align-items: center;
 }
 .card:hover{
     transform: scale(1.1);
@@ -138,15 +140,24 @@ h3::after{
     p{
         font-size: .8em;
     }
+    .card{
+        height: 35%;
+    }
 }
 @media (max-width:600px) {
     p{
         font-size: .7em;
     }
+    .card{
+        height: 40%;
+    }
 }
 @media (max-width:500px) {
     p{
         font-size: .6em;
+    }
+    .card{
+        height: 50%;
     }
     .container{
         flex-direction: column;

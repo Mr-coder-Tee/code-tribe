@@ -6,20 +6,27 @@ import Profile from './components/Profile';
 import Users from './components/Users';
 import HomePage from './components/HomePage';
 
+const homeView=({onClick})=>{
+    <HomePage/>;
+};
+const aboutView=({onClick})=>{
+    <About/>;
+};
+const usersView=({onClick})=>{
+    <Users/>;
+};
+const profileView=({onClick})=>{
+    <Profile/>;
+};
+const Apps=()=>{
+  const [currentview,setcurrentview]=React.useState("home");
+}
+
 
 class App extends Component {
-  state = { 
-      home:<HomePage/>,
-      about:<About/>,
-      profile:<Profile/>,
-      user:<Users/>,
-      currentframe:<Profile/>
-   };
+  
+  
    
-   bringToFront=(MyFrame)=>{
-         
-   };
-
   render() { 
     return ( 
       <div className="container">
@@ -35,6 +42,7 @@ class App extends Component {
         </div> 
      );
   }
+  
 }
  
 export default App;

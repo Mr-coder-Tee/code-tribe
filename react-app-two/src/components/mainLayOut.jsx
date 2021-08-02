@@ -8,10 +8,7 @@ import {BrowserRouter as Router,Route,browserHistory,IndexRoute,Link,Switch} fro
 // import { Switch } from 'react-router';
 
 class MainLayOut extends Component {
-    state={
-        currentframe:<HomePage/>,
-        other:<Users/>
-      }
+   
        
     render() { 
         return (  

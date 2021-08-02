@@ -96,6 +96,9 @@ h3{
 .m-2{
     margin: 2px;
 }
+.p-5{
+    padding: 5px;
+}
 h3::after{
     content: '';
     width: 100%;
@@ -109,6 +112,14 @@ h3::after{
     display: flex;
     justify-content: center;
     width: 100%;
+}
+.c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 .center-straight{
     display: flex;
@@ -144,6 +155,15 @@ h3::after{
 .padding{
     padding: 10px 15px;
 }
+.white{
+    color: white;
+}
+.myprofile{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid silver;
+}
 .card-background{
     height: 100vh;
     background: darkslategray;
@@ -155,9 +175,13 @@ h3::after{
     width: 20px;
     height: 20px;
 }
+.user-page{
+    background: linear-gradient(to right bottom,rgba(0,0,0,0.7),rgba(66, 245, 164,.9)),url("./images/user-background.jpg");
+    
+}
 .card{
     
-    background: url('./images/cardbackground.jpg');
+    background: url("images/cardbackground.jpg");
     background-size: cover;
     width: 60%;
     height: 40%;

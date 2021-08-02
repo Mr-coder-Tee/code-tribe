@@ -39,13 +39,13 @@ class Users extends Component {
         },
     ]}
     render() { 
-        return ( <div>
+        return ( <div className="user-page">
             {
                 this.state.users.map((rowdata,i)=>
                 <div>
                     <ul>
                         {this.state.users.map(user=>
-                        <li key={user.id}>
+                        <li className="white" key={user.id}>
                             {user.name}{" \t"}
                             {user.surname}{" \t"}
                             {user.age}{", "}{this.checkAge(user.age)}
